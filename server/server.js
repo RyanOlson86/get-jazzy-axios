@@ -52,6 +52,11 @@ app.get('/artist', (req, res) => {
 });
 
 // TODO - Add GET for songs
+app.get('/song', (req, res) => {
+    console.log('inside /song')
+    res.send(songListArray);
+});
+
 
 app.listen(PORT, () => {
     console.log('listening on port', PORT)
